@@ -1,0 +1,4 @@
+name: daw-plugin
+version: '1.0-SNAPSHOT'
+main: es.iesventura.daw.plugin.DawPlugin
+api-version: '1.21'
