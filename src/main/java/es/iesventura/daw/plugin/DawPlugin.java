@@ -1,5 +1,6 @@
 package es.iesventura.daw.plugin;
 
+import es.iesventura.daw.plugin.commands.MessageCommand;
 import es.iesventura.daw.plugin.listeners.PlayerJoinListener;
 import es.iesventura.daw.plugin.listeners.WeatherChangeListener;
 import es.iesventura.daw.plugin.managers.ListenersManager;
@@ -15,6 +16,7 @@ public final class DawPlugin extends JavaPlugin {
                 new PlayerJoinListener(),
                 new WeatherChangeListener()
         );
+        getServer().getCommandMap().register("dawplugin", new MessageCommand(this));
     }
 
     @Override
